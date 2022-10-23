@@ -1,6 +1,6 @@
 <div>
   <h1><%= form_header %></h1>
-  <%= form_with model: model do |f| %>
+  <%= form_with url: form_path, scope: :user do |f| %>
     <div>
       <%= f.label :username %>
       <%= f.text_field :username %>
