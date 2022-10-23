@@ -1,0 +1,16 @@
+<div>
+  <h1><%= form_header %></h1>
+  <%= form_with model: model do |f| %>
+    <div>
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
+    <div>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </div>
+    <div>
+      <%= f.submit submit_label %>
+    </div>
+  <% end %>
+</div>

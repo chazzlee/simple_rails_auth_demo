@@ -1,0 +1,10 @@
+<%= render partial: 'shared/form', locals: { 
+  model: user, 
+  form_header: 'Log in!',
+  submit_label: 'Log in' } 
+%>
+
+<div>
+  <p>Need an account?</p>
+  <%= link_to 'Sign up', new_user_path %>
+</div>
